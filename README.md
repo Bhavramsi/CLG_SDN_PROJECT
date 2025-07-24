@@ -88,6 +88,20 @@ This project introduces an intelligent traffic management system in SDN-based ne
 5. **Ryu controller** dynamically reroutes flows based on congestion scores.
 
 ---
+## BLOCK DOAGRAM**
+<img width="716" height="351" alt="image" src="https://github.com/user-attachments/assets/325e02b0-c4f2-4b71-b178-e8d42eb17e58" />
+
+---
+## FLOW CHART ##
+<img width="731" height="552" alt="image" src="https://github.com/user-attachments/assets/7d886b04-1b43-4443-a8a3-0b1fc135e2ea" />
+---
+---
+## UNDERSTANDING FLOW CHART##
+UNDERSTANDING OF THE FLOW CHART:
+1.	*LSTM Model*- It is a type of Recurrent Neural Network (RNN) that excels at understanding temporal (time-based) dependencies, making it ideal for forecasting time-series data like network traffic. It takes in real-time and historical network data (e.g., packet load, latency, throughput at different nodes or access points) and gives out predictions of which links or APs (Access Points) are likely to be congested soon.
+2.	*RYU Controller*- It acts as central brain of the SDN network which separates control plane (decisions) from the data plane (actual packet forwarding). The controller controls the flow rules while devices execute them. It receives predictions from the LSTM model and makes real-time decisions on routing and traffic flow.
+3.	*Flow Rule Table* – A flow rule table is a set of instructions installed on SDN-enabled devices (e.g., switches or Access Points) to control data traffic. Each rule can specify conditions such as source/destination IP, priority, and corresponding actions (e.g., forward, drop, redirect) [1][4]. In our setup, the table is constructed based on predictions from the LSTM model and the current network state. The SDN controller then generates optimized flow rules to reroute or balance traffic loads accordingly [9].
+---
 
 ## 📊 **Results**
 
@@ -95,6 +109,18 @@ This project introduces an intelligent traffic management system in SDN-based ne
 * **Confusion Matrix**: Shows high diagonal dominance
 * **Flow Redirection**: Reduces congestion in high-load APs
 * **QoS Improvement**: Lowered latency and packet loss post rerouting
+
+  <img width="691" height="346" alt="image" src="https://github.com/user-attachments/assets/fa01b775-7e03-4595-8d4c-631dd9bf2de2" />
+
+
+<img width="625" height="420" alt="image" src="https://github.com/user-attachments/assets/20c7f606-fc9e-4fe1-8a43-596ef643c753" />
+
+<img width="470" height="422" alt="image" src="https://github.com/user-attachments/assets/a7431402-ca22-499e-985d-2e3c5bf95b22" />
+
+<img width="732" height="467" alt="image" src="https://github.com/user-attachments/assets/2d5e81e4-1b87-4044-946a-ffab7c95e449" />
+
+
+---
 
 ---
 
