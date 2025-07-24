@@ -88,15 +88,15 @@ This project introduces an intelligent traffic management system in SDN-based ne
 5. **Ryu controller** dynamically reroutes flows based on congestion scores.
 
 ---
-## BLOCK DOAGRAM**
+## BLOCK DOAGRAM ##
 <img width="716" height="351" alt="image" src="https://github.com/user-attachments/assets/325e02b0-c4f2-4b71-b178-e8d42eb17e58" />
 
 ---
-## FLOW CHART ##
+## **FLOW CHART** 
 <img width="731" height="552" alt="image" src="https://github.com/user-attachments/assets/7d886b04-1b43-4443-a8a3-0b1fc135e2ea" />
 ---
 ---
-## UNDERSTANDING FLOW CHART##
+## **UNDERSTANDING FLOW CHART**
 UNDERSTANDING OF THE FLOW CHART:
 1.	*LSTM Model*- It is a type of Recurrent Neural Network (RNN) that excels at understanding temporal (time-based) dependencies, making it ideal for forecasting time-series data like network traffic. It takes in real-time and historical network data (e.g., packet load, latency, throughput at different nodes or access points) and gives out predictions of which links or APs (Access Points) are likely to be congested soon.
 2.	*RYU Controller*- It acts as central brain of the SDN network which separates control plane (decisions) from the data plane (actual packet forwarding). The controller controls the flow rules while devices execute them. It receives predictions from the LSTM model and makes real-time decisions on routing and traffic flow.
@@ -110,7 +110,7 @@ UNDERSTANDING OF THE FLOW CHART:
 * **Flow Redirection**: Reduces congestion in high-load APs
 * **QoS Improvement**: Lowered latency and packet loss post rerouting
 
-  <img width="691" height="346" alt="image" src="https://github.com/user-attachments/assets/fa01b775-7e03-4595-8d4c-631dd9bf2de2" />
+ <img width="691" height="346" alt="image" src="https://github.com/user-attachments/assets/fa01b775-7e03-4595-8d4c-631dd9bf2de2" />
 
 
 <img width="625" height="420" alt="image" src="https://github.com/user-attachments/assets/20c7f606-fc9e-4fe1-8a43-596ef643c753" />
