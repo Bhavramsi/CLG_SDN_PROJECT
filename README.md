@@ -94,10 +94,9 @@ This project introduces an intelligent traffic management system in SDN-based ne
 ---
 ## **FLOW CHART** 
 <img width="731" height="552" alt="image" src="https://github.com/user-attachments/assets/7d886b04-1b43-4443-a8a3-0b1fc135e2ea" />
----
----
+
 ## **UNDERSTANDING FLOW CHART**
-UNDERSTANDING OF THE FLOW CHART:
+
 1.	*LSTM Model*- It is a type of Recurrent Neural Network (RNN) that excels at understanding temporal (time-based) dependencies, making it ideal for forecasting time-series data like network traffic. It takes in real-time and historical network data (e.g., packet load, latency, throughput at different nodes or access points) and gives out predictions of which links or APs (Access Points) are likely to be congested soon.
 2.	*RYU Controller*- It acts as central brain of the SDN network which separates control plane (decisions) from the data plane (actual packet forwarding). The controller controls the flow rules while devices execute them. It receives predictions from the LSTM model and makes real-time decisions on routing and traffic flow.
 3.	*Flow Rule Table* – A flow rule table is a set of instructions installed on SDN-enabled devices (e.g., switches or Access Points) to control data traffic. Each rule can specify conditions such as source/destination IP, priority, and corresponding actions (e.g., forward, drop, redirect) [1][4]. In our setup, the table is constructed based on predictions from the LSTM model and the current network state. The SDN controller then generates optimized flow rules to reroute or balance traffic loads accordingly [9].
